@@ -22,7 +22,7 @@ async function parallelMap (thunks, concurrency = 5) {
     throw new Error('thunks must be of type array')
   }
   if (!thunks.length) {
-    return
+    return [ ]
   }
 
   if (concurrency > 0) {
